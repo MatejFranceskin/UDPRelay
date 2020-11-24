@@ -25,9 +25,9 @@ int main(int argc, char *argv[])
         return -1;
     }
 
-    uint16_t source_port = std::stoi(argv[0]);
-    std::string dest_ip = argv[1];
-    uint16_t dest_port = std::stoi(argv[2]);
+    uint16_t source_port = std::stoi(argv[1]);
+    std::string dest_ip = argv[2];
+    uint16_t dest_port = std::stoi(argv[3]);
 
     UDPRelay relay(dest_ip, dest_port, source_port);
 
